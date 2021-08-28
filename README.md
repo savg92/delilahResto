@@ -17,7 +17,7 @@ Instrucciones que permitirán la utilización de una copia de los archivos de fo
   ```
 - Siguiendo el ejemplo existente en el archivo **.env.example**. <br>
   Crear un archivo ***.env*** en la raíz del proyecto y crear las variables del entorno a gusto.
-- Abrir el archivo ***config.json*** ubicado en ***/delilahResto/config/*** y modifica las variables _username_ y _password_ de la sección test, a las correspondientes a tu  base de datos.
+- Abrir el archivo ***config.json*** ubicado en ***/delilahResto/config/*** y modifica las variables _username_ y _password_ de la sección ***development***, a las correspondientes a tu  base de datos.
 - Ejecuta el siguiente comando para iniciar el servidor node del proyecto
   ```
   npm run start
