@@ -44,11 +44,12 @@ Para iniciar las prubas de la API, se recomienda iniciar usando:
 
 ### Endpoints
 La url base es 
-127.0.0.1:{{port}}/
+127.0.0.1:{{port}}
 
 La API cuenta con los siguientes endpoints:
 - /register
 - /login
+(Los siguientes requieren del Bearer token, otorgado en el login)
 - /users
 - /users/:idUser
 - /products
