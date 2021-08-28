@@ -511,6 +511,37 @@ paths:
             $ref: '#/definitions/Error'
         '401':
           description: No Autorizado para borrar pedido
+  /orders/{idOrder}/cancelation:
+    put:
+      security:
+      - bearerAuth: []
+      tags:
+        - orders
+      summary: Modificacion de datos de un pedido. Se debe ser ADMIN
+      description: 'Trae datos del token. Si el usuario es "admin", podra modificar el status del pedido con "idOrder" a cancelado.<br>Si el usuario es "client", podra modificar el status de su pedido "idOrder" a cancelado, en dado caso de pertenecerle a si mismo.'
+      operationId: updateOrderCancelation
+      produces:
+        - application/json
+      parameters:
+        - in: header
+          name: role
+          type: string
+          required: true
+          description: "admin or client"
+        - name: idOrder
+          in: path
+          description: Sera usado el para traer los datos del pedido a modificar
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Pedido cancelado
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/Error'
+        '401':
+          description: No Autorizado para modificar un pedido
   /items:
     post:
       security:

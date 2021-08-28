@@ -1,0 +1,1082 @@
+{
+	"info": {
+		"_postman_id": "095445a5-27b6-4fe0-bcbc-ff585fc77e65",
+		"name": "delilahResto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "find all users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/users/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/users/:idUser",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"users",
+								":idUser"
+							],
+							"variable": [
+								{
+									"key": "idUser",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modify user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"firstName\": \"roxan\",\n\"lastname\": \"fox\",\n\"userName\": \"rfox\",\n\"email\": \"rfox@gmail.com\",\n\"phone\": \"1123594352\",\n\"address\": \"av rivadavia 4423\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/users/:idUser",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"users",
+								":idUser"
+							],
+							"variable": [
+								{
+									"key": "idUser",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete by user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/users/:idUser",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"users",
+								":idUser"
+							],
+							"variable": [
+								{
+									"key": "idUser",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "post product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productName\": \"atun\",\n    \"shortName\": null,\n    \"unitPrice\": \"850.00\",\n    \"description\": \"atun en salsa blanca\",\n    \"imgProduct\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/products/:idProduct",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modify product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productName\": \"atun a la parrilla\",\n    \"shortName\": null,\n    \"unitPrice\": \"890.00\",\n    \"description\": \"atun a la parrilla\",\n    \"imgProduct\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/products/:idProduct",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/products/:idProduct",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Post order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"paymentMethod\": \"efectivo\",\n    \"productId\": 2,\n    \"quantity\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/orders",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/orders",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/orders/:idOrder",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"orders",
+								":idOrder"
+							],
+							"variable": [
+								{
+									"key": "idOrder",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"cancelado\",\n    \"totalPrice\": \"1330.00\",\n    \"paymentMethod\": \"efectivo\",\n    \"addressUser\": \"av. santa fe 3230\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/orders/:idOrder",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"orders",
+								":idOrder"
+							],
+							"variable": [
+								{
+									"key": "idOrder",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/orders/:idOrder/cancelation",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"orders",
+								":idOrder",
+								"cancelation"
+							],
+							"variable": [
+								{
+									"key": "idOrder",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/orders/:idOrder",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"orders",
+								":idOrder"
+							],
+							"variable": [
+								{
+									"key": "idOrder",
+									"value": "13"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "Post item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderId\": 3,\n    \"productId\": 1,\n    \"quantity\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/items",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/items",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Item by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/items/:idItem",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"items",
+								":idItem"
+							],
+							"variable": [
+								{
+									"key": "idItem",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderId\": 7,\n    \"productId\": 1,\n    \"quantity\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/items/:idItem",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"items",
+								":idItem"
+							],
+							"variable": [
+								{
+									"key": "idItem",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/items/:idItem",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"items",
+								":idItem"
+							],
+							"variable": [
+								{
+									"key": "idItem",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favorites",
+			"item": [
+				{
+					"name": "Post favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/favorites",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All favorites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/favorites",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/favorites/:idFavorite",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"favorites",
+								":idFavorite"
+							],
+							"variable": [
+								{
+									"key": "idFavorite",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify Favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 8,\n    \"productId\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/favorites/:idFavorite",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"favorites",
+								":idFavorite"
+							],
+							"variable": [
+								{
+									"key": "idFavorite",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/favorites/:idFavorite",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"favorites",
+								":idFavorite"
+							],
+							"variable": [
+								{
+									"key": "idFavorite",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "rfox",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ofox@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:{{port}}/login",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "{{port}}",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"xully\",\n    \"lastname\": \"fox\",\n    \"userName\": \"xfox\",\n    \"password\": \"123\",\n    \"email\": \"xfox@gmail.com\",\n    \"phone\": 1123594352,\n    \"address\": \"av rivadavia 2423\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:{{port}}/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "{{port}}",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwibmFtZSI6InJveHkiLCJ0eXBlIjoiY2xpZW50IiwiaWF0IjoxNjI5MDA2MDM0fQ.xucBVxZzt9Alt1Ccw8uA1YzFRy7A5TLiswNI7oMe011n-mn-LFTfL3tOZ8t2H3MulcsqYFjGf8_1YFhzeMCjrA"
+		}
+	]
+}
