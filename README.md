@@ -4,12 +4,12 @@
 ## Instrucciones
 Instrucciones que permitirán la utilización de una copia de los archivos de forma local en tu computadora.
 
-### Requisitos
+### Requisitos basicos
 - Tener instalado NodeJS.
 - Tener instalado MySQL.
 
 ### Instalacion
-- Instalación de la base de datos. Podras realizar este proceso ejecutando en MySQL el archivo schema.sql ubicado en ***/delilahResto/seeders***
+- Instalación de la base de datos. Podras realizar este proceso ejecutando en MySQL el archivo schema.sql ubicado en ***/delilahResto/seeders*** <br>
   (En cado caso de querer realizarlo por tu cuenta, dar el formato nombre de: **delilahResto**)
 - Instalar las dependencias ejecutando:
   ```
