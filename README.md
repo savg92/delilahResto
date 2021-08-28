@@ -37,7 +37,9 @@ Para mejor visualización, puedes importar este archivo a la pagina https://edit
 Tambien se agregó el archivo **delilahResto.postman_collection.json** en el directorio raíz del repositorio para ser importado en POSTMAN; este ya contiene todas las rutas de la API.
 
 Para iniciar las prubas de la API, se recomienda iniciar usando:
-- El usuario ***ADMIN*** -> _***username:*** aadmin ***password:*** 123_
+- El usuario ***ADMIN***.
+  _***username:*** aadmin 
+  ***password:*** 123_
 
 ### Endpoints
 La url base es 
