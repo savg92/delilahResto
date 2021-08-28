@@ -49,7 +49,7 @@ La url base es
 La API cuenta con los siguientes endpoints:
 - /register
 - /login
-(Los siguientes requieren del Bearer token, otorgado en el login)
+<br>(Los siguientes requieren del Bearer token, otorgado en el login)
 - /users
 - /users/:idUser
 - /products
