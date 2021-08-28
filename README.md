@@ -9,14 +9,14 @@ Instrucciones que permitirán la utilización de una copia de los archivos de fo
 - Tener instalado MySQL.
 
 ### Instalacion
-- Instalación de la base de datos. Podras realizar este proceso ejecutando en MySQL el archivo schema.sql ubicado en /delilahResto/seeders
+- Instalación de la base de datos. Podras realizar este proceso ejecutando en MySQL el archivo schema.sql ubicado en ***/delilahResto/seeders***
   (En cado caso de querer realizarlo por tu cuenta, dar el formato nombre de: **delilahResto**)
 - Instalar las dependencias ejecutando:
   ```
   npm install
   ```
 - Siguiendo el ejemplo existente en el archivo **.env.example**. Crear un archivo ***.env*** en la raíz del proyecto y crear las variables del entorno a gusto.
-- Abrir el archivo config.json ubicado en ***/delilahResto/config/*** y modifica las variables _username_ y _password_ de la sección test, a las correspondientes a tu  base de datos.
+- Abrir el archivo ***config.json*** ubicado en ***/delilahResto/config/*** y modifica las variables _username_ y _password_ de la sección test, a las correspondientes a tu  base de datos.
 - Ejecuta el siguiente comando para iniciar el servidor node del proyecto
   ```
   npm run start
@@ -64,8 +64,8 @@ La API cuenta con los siguientes endpoints:
 
 Herramientas y/o paquetes usados en el proyecto:
 
-- NodeJS
-- cors
+- [NodeJS]
+- [cors]
 - dotenv
 - express
 - express-jwt
