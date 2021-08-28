@@ -37,7 +37,7 @@ Para mejor visualización, puedes ingresar a [swagger](https://editor.swagger.io
 Tambien se agregó el archivo **delilahResto.postman_collection.json** en el directorio raíz del repositorio para ser importado en POSTMAN; este ya contiene todas las rutas de la API.
 
 Para iniciar las prubas de la API, se recomienda iniciar usando:
-- El usuario ***ADMIN***.
+- El usuario ***ADMIN***.<br>
   _***username:*** aadmin <br>
   ***password:*** 123_
 
