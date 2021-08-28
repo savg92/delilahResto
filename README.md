@@ -12,15 +12,23 @@ Instrucciones que permitirán la utilización de una copia de los archivos de fo
 - Instalación de la base de datos. Podras realizar este proceso ejecutando en MySQL el archivo schema.sql ubicado en /delilahResto/seeders
   (En cado caso de querer realizarlo por tu cuenta, dar el formato nombre de: **delilahResto**)
 - Instalar las dependencias ejecutando:
-  ```npm install```
+  ```
+  npm install
+  ```
 - Siguiendo el ejemplo existente en el archivo **.env.example**. Crear un archivo ***.env*** en la raíz del proyecto y crear las variables del entorno a gusto.
 - Abrir el archivo config.json ubicado en ***/delilahResto/config/*** y modifica las variables _username_ y _password_ de la sección test, a las correspondientes a tu  base de datos.
 - Ejecuta el siguiente comando para iniciar el servidor node del proyecto
-  ```npm run start```
+  ```
+  npm run start
+  ```
   Ó en caso de tener instalado nodemon, puedes ejecutar este otro comando:
-  ```npm run dev```
+  ```
+  npm run dev
+  ```
 - En caso de querer sumistrar datos de ejemplo a la base de datos Delilah Resto, ejecuta
-  ```node_modules/.bin/sequelize db:seed:all```
+  ```
+  node_modules/.bin/sequelize db:seed:all
+  ```
 
 ## Documentación
 La documentación de la API puede encontrarse en el archivo **delilahResto.yaml** presente en el directorio raíz del repositorio.
