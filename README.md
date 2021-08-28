@@ -32,13 +32,13 @@ Instrucciones que permitirán la utilización de una copia de los archivos de fo
 
 ## Documentación
 La documentación de la API puede encontrarse en el archivo **delilahResto.yaml** presente en el directorio raíz del repositorio.
-Para mejor visualización, puedes importar este archivo a la pagina https://editor.swagger.io/# para mejor visualizacion con [swagger](https://editor.swagger.io/#).
+Para mejor visualización, puedes ingresar a [swagger](https://editor.swagger.io/#).
 
 Tambien se agregó el archivo **delilahResto.postman_collection.json** en el directorio raíz del repositorio para ser importado en POSTMAN; este ya contiene todas las rutas de la API.
 
 Para iniciar las prubas de la API, se recomienda iniciar usando:
 - El usuario ***ADMIN***.
-  _***username:*** aadmin 
+  _***username:*** aadmin <br>
   ***password:*** 123_
 
 ### Endpoints
@@ -64,13 +64,13 @@ La API cuenta con los siguientes endpoints:
 
 Herramientas y/o paquetes usados en el proyecto:
 
-- [NodeJS]
-- [cors]
-- dotenv
-- express
-- express-jwt
-- helmet
-- jsonwebtoken
-- mysql2
-- sequelize
-- sequelize-cli
+- [NodeJS](https://nodejs.org/en/)
+- [cors](https://www.npmjs.com/package/cors)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [express](https://www.npmjs.com/package/express)
+- [express-jwt](https://www.npmjs.com/package/express-jwt)
+- [helmet](https://www.npmjs.com/package/helmet)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [mysql2](https://www.npmjs.com/package/mysql2)
+- [sequelize](https://www.npmjs.com/package/sequelize)
+- [sequelize-cli](https://www.npmjs.com/package/sequelize-cli)
