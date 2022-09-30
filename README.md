@@ -1,5 +1,6 @@
 # Delilah Resto API
- Esté proyecto plantea la creación de un sistema de pedidos online para un restaurante. Deberás poner en funcionamiento las partes necesarias para montar una REST API que permita realizar altas, bajas, modificaciones y obtención de información sobre una estructura de datos que podría consumir un cliente.
+ Esté proyecto plantea la creación de un sistema de pedidos online para un restaurante. <br>
+ Deberás poner en funcionamiento las partes necesarias para montar una REST API que permita realizar altas, bajas, modificaciones y obtención de información sobre una estructura de datos que podría consumir un cliente.
 
 ## Instrucciones
 Instrucciones que permitirán la utilización de una copia de los archivos de forma local en tu computadora.
@@ -17,7 +18,7 @@ Instrucciones que permitirán la utilización de una copia de los archivos de fo
   ```
 - Siguiendo el ejemplo existente en el archivo **.env.example**. <br>
   Crear un archivo ***.env*** en la raíz del proyecto y crear las variables del entorno a gusto.
-- Abrir el archivo ***config.json*** ubicado en ***/delilahResto/config/*** y modifica las variables _username_ y _password_ de la sección ***development***, a las correspondientes a tu  base de datos.
+- Abrir el archivo ***config.json*** ubicado en ***/delilahResto/config/*** y modifica las variables _username_ y _password_ de la sección ***development***, a las correspondientes a tu base de datos.
 - Ejecuta el siguiente comando para iniciar el servidor node del proyecto
   ```
   npm run start
